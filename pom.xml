@@ -26,13 +26,13 @@
 	</developers>
 	<scm>
 		<connection>scm:git:https://github.com/amilkau/demo1.git</connection>
-		<developerConnection>scm:git:hhttps://github.com/amilkau/demo1.git</developerConnection>
+		<developerConnection>scm:git:https://github.com/amilkau/demo1.git</developerConnection>
 	  <tag>HEAD</tag>
   </scm>
 	<distributionManagement>
 		<repository>
 			<id>nexus-releases</id>
-			<url>http://localhost:8091/nexus/content/repositories/releases</url>
+			<url>http://localhost:8091/nexus/content/repositories/maven-releases</url>
 		</repository>
 	</distributionManagement>
 	<dependencies>
