@@ -29,7 +29,6 @@
 	<scm>
 		<connection>scm:git:https://github.com/amilkau/demo1.git</connection>
 		<developerConnection>scm:git:https://github.com/amilkau/demo1.git</developerConnection>
-		<tag>HEAD</tag>
 	</scm>
 	<distributionManagement>
 		<repository>
