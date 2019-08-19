@@ -32,3 +32,4 @@ build/
 
 #### Project ####
 pom.xml.releaseBackup
+release.properties
