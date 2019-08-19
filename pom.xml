@@ -24,7 +24,7 @@
 		</developer>
 	</developers>
 	<scm>
-		<connection>scm:git:https://github.com/amilkau/demo1.git</connection>
+		<connection>scm:git:https://amilkau:letmein120468@github.com/amilkau/demo1.git</connection>
 		<developerConnection>scm:git:https://github.com/amilkau/demo1.git</developerConnection>
 	  <tag>demo1-1.0.3</tag>
   </scm>
