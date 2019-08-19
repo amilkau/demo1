@@ -25,6 +25,10 @@
 			<email>alexej.milkau@lhsystems.com</email>
 		</developer>
 	</developers>
+	<scm>
+		<connection>${my.connection}</connection>
+		<developerConnection>${my.developer.connection}</developerConnection>
+	</scm>
 	<distributionManagement>
 		<repository>
 			<id>nexus-releases</id>
