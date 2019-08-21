@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -26,13 +28,17 @@
 	<scm>
 		<connection>${my.connection}</connection>
 		<developerConnection>${my.developer.connection}</developerConnection>
-	  <tag>HEAD</tag>
-  </scm>
+		<tag>HEAD</tag>
+	</scm>
 	<distributionManagement>
 		<repository>
 			<id>nexus-releases</id>
 			<url>http://localhost:8091/repository/maven-releases</url>
 		</repository>
+		<snapshotRepository>
+			<id>nexus-snapshot</id>
+			<url>http://localhost:8091/repository/maven-snapshot</url>
+		</snapshotRepository>
 	</distributionManagement>
 	<dependencies>
 		<dependency>
