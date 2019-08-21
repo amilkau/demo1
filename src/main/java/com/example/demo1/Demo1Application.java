@@ -51,8 +51,7 @@ public class Demo1Application extends SpringBootServletInitializer implements Ap
 
 	@RequestMapping(value = "/")
 	public String hello() {
-		return "Hello World. This is my first spring boot web application. The name of the applicaton is "
-				+ applicationName + ".";
+		return "This is my first spring boot web application. The name of the applicaton is " + applicationName + ".";
 	}
 
 	@RequestMapping(value = "/products")
