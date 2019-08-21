@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+
+<configuration>
+	<include resource="org/springframework/boot/logging/logback/defaults.xml" />
+    <property name="LOG_FILE" value="d:/DEV/Daten/MyProjects/SpringBootTutorial/logs/demo1.log" />
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
+			by default -->
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} ${LOG_LEVEL_PATTERN:-%5p} [%mdc{REMOTE_USER:-}] --- [%t]  %-40.40logger.%M\(%line\) : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}</pattern>
+		</encoder>
+	</appender>
+	<appender name="FILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} ${LOG_LEVEL_PATTERN:-%5p} [%mdc{REMOTE_USER:-}] --- [%t]  %-40.40logger.%M\(%line\) : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}</pattern>
+		</encoder>
+		<file>${LOG_FILE}</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}</fileNamePattern>
+   		    <maxHistory>32</maxHistory>
+		</rollingPolicy>
+	</appender>
+
+	<logger name="com.lhsystems" level="INFO" additivity="false">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE" />
+	</logger>
+
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>

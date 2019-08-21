@@ -1,0 +1,12 @@
+spring:
+   application:
+      name: mydemoservice on dev system
+
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    com.lhsystems: info
+    com.lhsystems.guard: debug
+  
+server:
+  port: 9090
